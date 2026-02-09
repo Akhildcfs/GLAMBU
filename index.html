@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="glambu, fashion model agency, modeling agency, model management, fashion models, runway models, brand campaigns, model casting, fashion industry, model representation">
+<meta name="description" content="Glambu - Premier fashion model agency representing top talent for runway shows, brand campaigns, and fashion editorials. Discover exceptional models and professional management services.">
+<title>Glambu | Premier Fashion Model Agency</title>
+
+<script src="https://cdn.tailwindcss.com/3.4.16">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", function () {
+      menu.classList.toggle("active");
+    });
+  });
+</script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#FF1493", secondary: "#FF69B4", accent: "#FFB6C1" },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        DEFAULT: "8px",
+        md: "12px",
+        lg: "16px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        full: "9999px",
+        button: "8px",
+      },
+    },
+  },
+};
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="min-h-screen text-white overflow-x-hidden">
+  <!-- Background Video -->
+  <div class="video-container">
+    <video autoplay loop muted playsinline id="background-video">
+      <source src="videos/snow.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Navigation Menu -->
+  <header class="fixed top-0 w-full z-50 ">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center">
+        <img src="img/glambu-logo.png" alt="Glambu Logo" class="h-14 w-auto">
+      </a>
+      <!-- Hamburger Icon -->
+      <button id="menu-toggle" class="text-white focus:outline-none">
+        <i class="ri-menu-line text-3xl"></i>
+      </button>
+      <!-- Navigation Menu -->
+      <div id="menu" class="menu-container hidden flex-col absolute top-16 right-6 bg-black bg-opacity-80 rounded-lg shadow-lg p-6">
+        <nav class="flex flex-col space-y-3">
+          <a href="#home" class="text-white hover:text-primary transition-colors duration-300">Home</a>
+          <a href="#about" class="text-white hover:text-primary transition-colors duration-300">About</a>
+          <a href="#services" class="text-white hover:text-primary transition-colors duration-300">Services</a>
+          <a href="#models" class="text-white hover:text-primary transition-colors duration-300">Our Models</a>
+          <a href="#portfolio" class="text-white hover:text-primary transition-colors duration-300">Portfolio</a>
+          <a href="#casting" class="text-white hover:text-primary transition-colors duration-300">Casting</a>
+          <a href="#team" class="text-white hover:text-primary transition-colors duration-300">Our Team</a>
+          <a href="#contact" class="text-white hover:text-primary transition-colors duration-300">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center px-6">
+<div class="text-center max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Glambu Fashion Model Agency</h1>
+<p class="text-xl md:text-2xl mb-10 text-white max-w-2xl mx-auto" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5);">Representing exceptional talent for runway shows, brand campaigns, and fashion editorials worldwide.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="#casting" class="bg-primary text-white px-8 py-3 rounded-button font-medium text-lg shadow-lg btn-primary whitespace-nowrap">Book a Model</a>
+<a href="#portfolio" class="bg-white bg-opacity-20 backdrop-blur-sm text-white border border-white border-opacity-30 px-8 py-3 rounded-button font-medium text-lg hover:bg-opacity-30 transition-all duration-300 whitespace-nowrap">View Portfolio</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-black bg-opacity-70">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">About Glambu</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-lg max-w-3xl mx-auto">Glambu is a premier fashion model agency bridging exceptional talent with renowned brands. We represent diverse models for runway shows, editorial campaigns, brand collaborations, and fashion events. Our mission is to empower creativity, celebrate individuality, and redefine fashion standards globally.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <div class="rounded-lg overflow-hidden shadow-2xl image-gallery">
+    <img src="img/img1.jpeg" alt="Glambu Models" class="w-full h-full object-cover">
+  </div>
+  <div>
+<h3 class="text-2xl font-semibold mb-4">Excellence in Representation</h3>
+<p class="text-lg mb-6">We discover, develop, and represent exceptional talent across fashion, commercial, and editorial markets. Our dedicated team ensures every model receives professional guidance and premium opportunities.</p>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-user-star-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Talent Development</h4>
+<p>Comprehensive training, portfolio building, and career guidance for emerging models</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-star-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Brand Partnerships</h4>
+<p>Strong relationships with top fashion brands, designers, and creative agencies</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-global-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Global Reach</h4>
+<p>International network connecting models with opportunities worldwide</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20 px-6 bg-black bg-opacity-60">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Our Services</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-lg max-w-3xl mx-auto">Comprehensive model management and fashion industry services tailored to elevate your brand.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-user-follow-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Model Management</h3>
+<p>Full-service representation including career planning, portfolio development, and contract negotiations for our talent.</p>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-shopping-bag-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Brand Campaigns</h3>
+<p>Connect with the perfect models for your advertising campaigns, product launches, and brand collaborations.</p>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-footprint-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Runway Shows</h3>
+<p>Professional models for fashion weeks, designer shows, and runway events with complete show coordination.</p>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-camera-3-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Photoshoots & Editorial</h3>
+<p>Experienced models for fashion editorials, lookbooks, e-commerce, and creative photoshoot productions.</p>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-calendar-event-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Event Appearances</h3>
+<p>Models for brand events, product launches, fashion parties, and promotional appearances.</p>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 feature-card">
+<div class="w-16 h-16 flex items-center justify-center bg-primary rounded-full mb-6">
+<i class="ri-search-eye-line text-white text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Casting Services</h3>
+<p>Professional casting coordination for brands seeking the perfect talent for their creative projects.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Models Section -->
+<section id="models" class="py-20 px-6 bg-black bg-opacity-70">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Our Models</h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="text-lg max-w-3xl mx-auto">Discover exceptional talent represented by Glambu - diverse, professional, and camera-ready models.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/1.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Elite Model</h3>
+          <p class="text-sm text-gray-300">Runway & Editorial</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/2.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Commercial Model</h3>
+          <p class="text-sm text-gray-300">Brand Campaigns</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/3.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Editorial Model</h3>
+          <p class="text-sm text-gray-300">Fashion Magazines</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/4.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Runway Specialist</h3>
+          <p class="text-sm text-gray-300">Fashion Weeks</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/5.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">High Fashion</h3>
+          <p class="text-sm text-gray-300">Luxury Brands</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/6.jpeg" alt="Fashion Model" class="w-full h-80 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Versatile Talent</h3>
+          <p class="text-sm text-gray-300">Multi-Platform</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 px-6 bg-black bg-opacity-60">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Portfolio Highlights</h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="text-lg max-w-3xl mx-auto">Browse our recent campaigns, runway shows, editorial work, DJ parties, and food collaborations showcasing Glambu talent.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/brandcampaign.jpeg" alt="Campaign Work" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Brand Campaign</h3>
+          <p class="text-sm text-gray-300">Fashion & Editorial</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/editorial_shoot.jpeg" alt="Editorial Shoot" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Editorial Shoot</h3>
+          <p class="text-sm text-gray-300">Magazine Feature</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/runway_show.jpeg" alt="Runway Show" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Runway Show</h3>
+          <p class="text-sm text-gray-300">Fashion Week</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/djpartyevent.jpeg" alt="DJ Party" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">DJ Party Event</h3>
+          <p class="text-sm text-gray-300">Nightlife & Entertainment</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/foodcolab.jpeg" alt="Food Collaboration" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Food Collaboration</h3>
+          <p class="text-sm text-gray-300">Culinary Brand Partnership</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg image-gallery bg-white bg-opacity-10 backdrop-blur-sm">
+        <img src="img/brandcollaboration.jpeg" alt="Brand Collaboration" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Brand Collaboration</h3>
+          <p class="text-sm text-gray-300">Commercial Work</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Casting Section -->
+<section id="casting" class="py-20 px-6 bg-black bg-opacity-70">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Casting & Bookings</h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="text-lg max-w-3xl mx-auto">Looking for the perfect talent for your brand? Book models from Glambu or apply to join our agency.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Book a Model -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+        <div class="text-center mb-6">
+          <div class="w-20 h-20 flex items-center justify-center bg-primary rounded-full mx-auto mb-6">
+            <i class="ri-user-star-line text-white text-4xl"></i>
+          </div>
+          <h3 class="text-3xl font-semibold mb-4">Book Our Models</h3>
+          <p class="text-lg mb-8">Brands, photographers, and creative agencies can book our professional models for campaigns, shoots, and events.</p>
+        </div>
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Diverse portfolio of professional models</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Experience in runway, editorial & commercial work</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Professional coordination & contract management</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Competitive rates for all project types</p>
+          </div>
+        </div>
+        <a href="#contact" class="block w-full text-center bg-primary text-white px-8 py-4 rounded-button font-medium hover:bg-opacity-90 transition-colors duration-300 text-lg">Request Booking</a>
+      </div>
+
+      <!-- Become a Model -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+        <div class="text-center mb-6">
+          <div class="w-20 h-20 flex items-center justify-center bg-primary rounded-full mx-auto mb-6">
+            <i class="ri-star-smile-line text-white text-4xl"></i>
+          </div>
+          <h3 class="text-3xl font-semibold mb-4">Join Glambu</h3>
+          <p class="text-lg mb-8">Aspiring models can apply to join our agency and kickstart your fashion modeling career with professional representation.</p>
+        </div>
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Professional portfolio development</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Industry connections & networking opportunities</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Career guidance & training programs</p>
+          </div>
+          <div class="flex items-start">
+            <i class="ri-check-double-line text-primary mr-3 text-xl mt-1"></i>
+            <p>Access to exclusive casting calls</p>
+          </div>
+        </div>
+        <a href="#contact" class="block w-full text-center bg-white text-black px-8 py-4 rounded-button font-medium hover:bg-gray-200 transition-colors duration-300 text-lg">Apply Now</a>
+      </div>
+    </div>
+
+    <!-- Application Requirements -->
+    <div class="mt-16 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Model Application Requirements</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-3">
+              <i class="ri-camera-line text-white"></i>
+            </div>
+            <h4 class="text-xl font-medium">Photos</h4>
+          </div>
+          <p>Recent photos including headshots, full-body shots, and portfolio work if available</p>
+        </div>
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-3">
+              <i class="ri-ruler-line text-white"></i>
+            </div>
+            <h4 class="text-xl font-medium">Measurements</h4>
+          </div>
+          <p>Height, weight, bust/chest, waist, hips, shoe size, and clothing size</p>
+        </div>
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-3">
+              <i class="ri-file-text-line text-white"></i>
+            </div>
+            <h4 class="text-xl font-medium">Details</h4>
+          </div>
+          <p>Contact information, experience, special skills, and availability</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet Our Team Section -->
+<section id="team" class="py-20 px-6 bg-black bg-opacity-70">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
+      <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+      <p class="text-lg max-w-3xl mx-auto">Meet the visionary founders behind Glambu - passionate about empowering talent and redefining fashion standards.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <!-- Founder 1 - Natasha -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg overflow-hidden shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+        <div class="aspect-w-3 aspect-h-4">
+          <img src="img/natasha.jpg" alt="Natasha - Co-Founder" class="w-full h-96 object-cover">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold mb-2">Madhuri Biswas</h3>
+          <p class="text-primary font-medium mb-4">Co-Founder & Creative Director</p>
+          <p class="text-gray-300 mb-4">With a keen eye for talent and a passion for fashion, Natasha brings years of industry experience in model scouting and brand partnerships to Glambu.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="https://www.instagram.com/indian_natasha/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary transition-colors duration-300">
+              <i class="ri-instagram-line text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder 2 - Bharath -->
+      <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg overflow-hidden shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+        <div class="aspect-w-3 aspect-h-4">
+          <img src="img/bharath.jpg" alt="Bharath - Co-Founder" class="w-full h-96 object-cover">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold mb-2">Bharath Kumar</h3>
+          <p class="text-primary font-medium mb-4">Co-Founder & Business Director</p>
+          <p class="text-gray-300 mb-4">Bharath's strategic vision and business acumen drive Glambu's growth, fostering relationships with top brands and expanding the agency's global presence.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="https://www.instagram.com/bharath_mds/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary transition-colors duration-300">
+              <i class="ri-instagram-line text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact & Location Section -->
+<section id="contact" class="py-20 px-6 bg-black bg-opacity-60">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-lg max-w-3xl mx-auto">Ready to book exceptional talent or join our agency? Contact Glambu today to discuss your fashion needs.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8">
+<h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-mail-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Email</h4>
+<p>info@glambu.com<br>bookings@glambu.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-phone-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Phone</h4>
+<p>+91 6374240067<br>Available Monday - Sunday</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4 flex-shrink-0">
+<i class="ri-time-line text-white"></i>
+</div>
+<div>
+<h4 class="text-xl font-medium mb-1">Office Hours</h4>
+<p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+<div class="flex space-x-4">
+  <a href="https://www.instagram.com/glambu.official/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary transition-colors duration-300">
+    <i class="ri-instagram-line text-white text-xl"></i>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary transition-colors duration-300">
+    <i class="ri-facebook-fill text-white text-xl"></i>
+  </a>
+  <a href="#" target="_blank" rel="noopener noreferrer" class="w-12 h-12 flex items-center justify-center bg-white bg-opacity-10 rounded-full hover:bg-primary transition-colors duration-300">
+    <i class="ri-youtube-fill text-white text-xl"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8">
+  <h3 class="text-2xl font-semibold mb-6">Send us a Message</h3>
+  <form class="space-y-4">
+    <div>
+      <label class="block mb-2 font-medium">Name</label>
+      <input type="text" class="w-full px-4 py-3 rounded-lg bg-black bg-opacity-30 border border-white border-opacity-20 focus:border-primary focus:outline-none" placeholder="Your Name">
+    </div>
+    <div>
+      <label class="block mb-2 font-medium">Email</label>
+      <input type="email" class="w-full px-4 py-3 rounded-lg bg-black bg-opacity-30 border border-white border-opacity-20 focus:border-primary focus:outline-none" placeholder="your@email.com">
+    </div>
+    <div>
+      <label class="block mb-2 font-medium">Subject</label>
+      <select class="w-full px-4 py-3 rounded-lg bg-black bg-opacity-30 border border-white border-opacity-20 focus:border-primary focus:outline-none">
+        <option>Book a Model</option>
+        <option>Model Application</option>
+        <option>Brand Collaboration</option>
+        <option>General Inquiry</option>
+      </select>
+    </div>
+    <div>
+      <label class="block mb-2 font-medium">Message</label>
+      <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-black bg-opacity-30 border border-white border-opacity-20 focus:border-primary focus:outline-none" placeholder="Tell us about your project or inquiry..."></textarea>
+    </div>
+    <button type="submit" class="w-full bg-primary text-white px-8 py-4 rounded-button font-medium hover:bg-opacity-90 transition-colors duration-300 text-lg">Send Message</button>
+  </form>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-10 px-6 bg-black bg-opacity-80">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<a href="#" class="text-3xl font-['Pacifico'] text-white">Glambu</a>
+<p class="mt-2 text-gray-300">Premier Fashion Model Agency</p>
+</div>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="#home" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+<a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+<a href="#services" class="text-gray-300 hover:text-white transition-colors duration-300">Services</a>
+<a href="#models" class="text-gray-300 hover:text-white transition-colors duration-300">Our Models</a>
+<a href="#portfolio" class="text-gray-300 hover:text-white transition-colors duration-300">Portfolio</a>
+<a href="#casting" class="text-gray-300 hover:text-white transition-colors duration-300">Casting</a>
+<a href="#team" class="text-gray-300 hover:text-white transition-colors duration-300">Our Team</a>
+<a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+</div>
+</div>
+</div>
+<hr class="border-gray-700 my-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 mb-4 md:mb-0">&copy; 2026 Glambu Fashion Model Agency. All rights reserved.</p>
+<div class="flex items-center space-x-4">
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"d100aa0e68cf4f4c946f1e4a090cb88e","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+    </html>
