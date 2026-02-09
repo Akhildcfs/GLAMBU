@@ -1,0 +1,40 @@
+GLAMBU WEBSITE - IMAGE REQUIREMENTS
+====================================
+
+Please add the following images to the img/ folder:
+
+1. LOGO (REQUIRED - Already provided in screenshot):
+   - File name: glambu-logo.png
+   - Description: The Glambu logo with pink silhouette and text
+   - Recommended size: 200x100px (or similar aspect ratio)
+   - Format: PNG with transparent background
+
+2. FOUNDER PHOTOS (REQUIRED):
+   - natasha.jpg - Photo of Natasha (Co-Founder & Creative Director)
+   - bharath.jpg - Photo of Bharath (Co-Founder & Business Director)
+   - Recommended size: 600x800px (portrait orientation)
+   - Format: JPG or PNG
+   - Style: Professional headshots or portrait photos
+
+3. PORTFOLIO PHOTOS (REQUIRED - Specific filenames):
+   - brandcampaign.jpeg - Brand campaign/fashion editorial photo
+   - editorial_shoot.jpeg - Magazine feature/editorial shoot photo
+   - runway_show.jpeg - Fashion week/runway show photo
+   - djpartyevent.jpeg - DJ party/nightlife entertainment photo
+   - foodcolab.jpeg - Food collaboration/culinary brand partnership photo
+   - brandcollaboration.jpeg - Brand collaboration/commercial work photo
+
+4. ABOUT SECTION IMAGE:
+   - img1.jpeg - Main about section image
+   - Suggested: Group photo of models or agency team
+
+CURRENT STATUS:
+- Logo reference from screenshot needs to be saved as: img/glambu-logo.png
+- Founder photos needed: natasha.jpg and bharath.jpg
+- Portfolio images can be updated anytime
+
+HOW TO ADD IMAGES:
+1. Save the Glambu logo image (from screenshot) as "glambu-logo.png" in this folder
+2. Add professional photos of Natasha as "natasha.jpg"
+3. Add professional photo of Bharath as "bharath.jpg"
+4. Replace numbered jpeg files with actual portfolio work
